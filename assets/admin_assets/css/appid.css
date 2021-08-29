@@ -1,0 +1,537 @@
+.textB{
+    font-weight: 700;
+}
+img.w-6 {
+    width: 20%;
+    margin: 0px 64px;
+}
+.main-content.p-8rem{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.editlist .card{
+    background-color:transparent;
+    border:2px solid transparent;
+}
+.p-2rem{
+    padding:0rem 2rem;
+}
+.paddingnote {
+    padding: 3rem;
+}
+.paddingemail {
+    padding: 0rem 20rem;
+}
+.checkboxScroll{
+    height: 152px;
+overflow: overlay;
+}
+.forgotpass .card{
+    background:#fff;
+}
+.table, .table-responsive{
+    width: auto;
+}
+a.card-link{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.indexnone tr:nth-child(2n+2) {background: #CCC;}
+thead th{
+   color:#fff!important;
+}
+.card{
+   border:none!important;
+background: transparent;
+}
+
+thead{
+    background-color: orange;
+    color:white;
+}
+
+.dropdown-item{
+    width:auto;
+}
+.dolarAlign1{
+  
+position: absolute;
+text-align: left;
+z-index: 999;
+line-height: 1;
+}
+.dolarAlign{
+    position: absolute;
+z-index: 999;
+line-height: 1;
+margin-left: -20rem;
+}
+.collapse .side-nav{
+    width: 280px;
+background-color: #fff;
+z-index: 1000;
+top: 70px;
+bottom: 0px;
+position: fixed;
+overflow: hidden;
+transition: all 0.2s ease;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+-ms-transition: all 0.2s ease;
+
+}
+.is-expand .collapse .side-nav {
+left: 0;
+}
+
+  #faqAppend .card-link .form-control{
+    padding-bottom: 13px;
+    border:2px solid transparent;
+   background-color: transparent;
+   color:#fff;
+}
+#faqAppend textarea.form-control {
+height: max-content;
+border: transparent;
+overflow: hidden;
+}
+#faqAppend .card-link .form-control:focus {
+color: #495057;
+background-color: #fff;
+border-color: #80bdff;
+}
+#faqAppend .card-link{
+     color: #fff;
+ }
+ #accordion .card-header {
+background: orange;
+line-height: 1;
+text-align: center;
+font-weight: 700;
+font-size: 18px;
+}
+a.card-link {
+color: #fff!important;
+}
+
+#accordion .card {
+    border:2px solid transparent!important;
+}
+#accordion .form-group {
+    margin-bottom:14px;
+}
+.fa-user-shield:before {
+    content: "\f505";
+    font-size: 20px;
+    color: blue;
+}
+
+.paddingnote {
+    padding: 0rem 3rem;
+}
+
+.w-56 {
+    width: 56%;
+    margin-top: 14px;
+}
+
+.alertText {
+    font-size: 15px;
+    color: red;
+    padding: 12px;
+}
+
+.dropdown-item {
+    padding: 6px 7px;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+.fa-edit {
+    color: darkblue;
+}
+
+.fa-envelope {
+    color: orangered;
+}
+
+.fa-print {
+    color: darkgreen;
+}
+
+th {
+    font-weight: bold;
+}
+
+.w-56 {
+    width: 56%;
+    margin-top: 14px;
+}
+
+.squareblue {
+    margin: auto;
+    height: 30px;
+    width: 50px;
+    background-color: blue;
+}
+
+.squarered {
+    margin: auto;
+    height: 30px;
+    width: 50px;
+    background-color: red;
+}
+
+.alertRed {
+    color: red;
+}
+
+.orangebg {
+    color: #fff;
+    background: orange;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.alertGreen {
+    color: darkgreen;
+}
+
+.alertBlue {
+    color: deepskyblue;
+}
+
+.squareorange {
+    margin: auto;
+    height: 30px;
+    width: 50px;
+    background-color: darkorange;
+}
+@media only screen and (max-width: 992px){
+    .is-folded .side-nav {
+        left: 0px;
+    }
+    .mobview{
+        display: block!important;
+    }
+    .webview{
+        display: none!important;
+    }
+        }
+        @media only screen and (min-width: 993px){
+    .is-folded .side-nav {
+        left: 0px;
+    }
+    .mobview{
+        display: none!important;
+    }
+    .webview{
+        display: block!important;
+    }
+        }
+@media only screen and (max-width: 767px){
+    .main-content.p-8rem {
+        padding: 0rem 0rem!important;
+    }
+    .alert{
+        padding:0rem!important;
+    }
+    .paddingUpdate, .paddingnote {
+    padding: 0rem!important;
+    }
+.forgotpass .card {
+background-color: transparent!important;
+border: 1px solid transparent;
+}
+}
+@media only screen and (max-width: 800px) {
+    button.btn.btn-primary.mb-3.ml-3 {
+margin-left: 0px!important;
+}
+    .tablesResponsive table {
+        margin-top: 2rem;
+    }
+    /* Force table to not be like tables anymore */
+    .tablesResponsive table,
+    .tablesResponsive thead,
+    .tablesResponsive tbody,
+    .tablesResponsive th,
+    .tablesResponsive td,
+    .tablesResponsive tr {
+        display: block;
+    }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        .tablesResponsive thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    .tablesResponsive tr {
+        border: 1px solid #ccc;
+    }
+
+    .tablesResponsive td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+        .tablesResponsive td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /*
+Label the data
+*/
+        .tablesResponsive td:before {
+            content: attr(data-title);
+        }
+}
+.paddingUpdate{
+    padding:0rem 5rem;
+}
+.color-red{
+color:red;
+padding:1rem;
+}
+.pagination .page-link {
+border: 1px solid transparent;
+border-radius: 0px;
+}
+
+.pagination a.page-link {
+color: blue;
+}
+
+.pagination .page-item.active .page-link {
+width: 100%;
+margin-left: 0px;
+}
+
+.pagination li.page-item {
+border: 1px solid #eee;
+}
+#accordion .card-header {
+background: orange;
+line-height: 3;
+text-align: center;
+font-size: 16px;
+}
+
+#accordion .card {
+border: 2px solid transparent !important;
+}
+
+#accordion .form-group {
+margin-bottom: 14px;
+}
+
+.fa-user-shield:before {
+content: "\f505";
+font-size: 20px;
+color: blue;
+}
+
+.w-56 {
+width: 56%;
+margin-top: 14px;
+}
+
+.alertText {
+font-size: 15px;
+color: red;
+padding: 12px;
+}
+
+.dropdown-item {
+padding: 6px 7px;
+}
+
+.fa-trash-alt {
+color: red;
+}
+
+.fa-edit {
+color: darkblue;
+}
+
+.fa-envelope {
+color: orangered;
+}
+
+.fa-print {
+color: darkgreen;
+}
+
+th {
+font-weight: bold;
+}
+
+.w-56 {
+width: 56%;
+margin-top: 14px;
+}
+
+.squareblue {
+margin: auto;
+height: 30px;
+width: 50px;
+background-color: blue;
+}
+
+.squarered {
+margin: auto;
+height: 30px;
+width: 50px;
+background-color: red;
+}
+
+.alertRed {
+color: red;
+}
+
+.orangebg {
+color: #fff;
+background: orange;
+padding: 1rem;
+font-size: 18px;
+font-weight: 500;
+}
+
+.alertGreen {
+color: darkgreen;
+}
+
+.alertBlue {
+color: deepskyblue;
+}
+
+.squareorange {
+margin: auto;
+height: 30px;
+width: 50px;
+background-color: darkorange;
+}
+@media only screen and (min-width: 992px){
+.is-folded .side-nav .side-nav-inner .side-nav-menu li.dropdown .icon-holder {
+margin-right: 30px!important;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+  .webform{
+      display:none;
+  }
+  .mobform{
+    display:block;
+}
+}
+@media only screen and (min-width: 1023px) {
+    .webform{
+        display:block;
+    }
+    .mobform{
+      display:none;
+  }
+  }
+button.btn.btn-primary.mb-3.ml-3 {
+margin-left: 0px;
+}
+}
+@media only screen and (max-width: 800px) {
+.tablesResponsive table {
+    margin-top: 2rem;
+}
+/* Force table to not be like tables anymore */
+.tablesResponsive table,
+.tablesResponsive thead,
+.tablesResponsive tbody,
+.tablesResponsive th,
+.tablesResponsive td,
+.tablesResponsive tr {
+    display: block;
+}
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .tablesResponsive thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+.tablesResponsive tr {
+    border: 1px solid #ccc;
+}
+
+.tablesResponsive td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+}
+
+    .tablesResponsive td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /*
+Label the data
+*/
+    .tablesResponsive td:before {
+        content: attr(data-title);
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .paddingemail {
+        padding: 0rem 0rem!important;
+    }
+button.btn.btn-primary.mb-3.ml-3 {
+margin-left: 0px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    .color-red {
+        padding: 0rem;
+    }
+
+    .main-content.p-8rem {
+        padding: 0px;
+    }
+}
