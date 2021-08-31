@@ -40,7 +40,8 @@
             <div class="header">
                 <div class="logo logo-dark">
                     <a href="index-projects.html">
-                        <img class="img-responsive w-56" src="{{ asset('assets/upload/logo.png') }}" alt="Logo">
+                        <img class="img-responsive w-56" src="assets/images/logo/logo.png" alt="Logo">
+
                     </a>
                 </div>
                 <!----<div class="logo logo-white">
@@ -166,14 +167,17 @@
                                     </div>
                                 </a>
 
-                                <a href="logout.html" class="dropdown-item d-block p-h-15 p-v-10">
+                                <a href="{{ route('logout') }}" class="dropdown-item d-block p-h-15 p-v-10" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div>
                                             <i class="anticon opacity-04 font-size-16 anticon-logout"></i>
-                                            <span class="m-l-10">Logout</span>
+                                            <span class="m-l-10">{{ __('Logout') }}</span>
                                         </div>
-                                        <i class="anticon font-size-10 anticon-right"></i>
                                     </div>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
                                 </a>
                             </div>
                         </li>

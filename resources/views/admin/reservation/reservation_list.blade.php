@@ -44,7 +44,7 @@
                             </a>
                             </div>
                             <div class="col-lg-3 col-md-4 text-center mx mb-3">
-                                <a class="btn btn-primary mb-3" href="{{ url('admin/reservation_add') }}">
+                                <a class="btn btn-primary mb-3" href="{{ url('admin/reservation_list_add') }}">
                                     <i class="anticon anticon-plus"></i>
                                     <span class="m-l-5">Add New Reservation</span>
                                 </a>

@@ -85,6 +85,9 @@ class AdminController extends Controller
         $reservation_list = DB::table('reservation_lis')->orderBy('id','desc')->paginate(100);
         return view('admin.reservation.reservation_list',compact('reservation_list'));
     }
+    public function reservation_list_add(Request $request){
+        return view('admin.reservation.reservation_list_add');
+    }
     
     // Admin Reservation Status Function
     public function reservation_status(Request $request){
@@ -759,33 +762,6 @@ class AdminController extends Controller
     public function setting(Request $request){
         $setting = DB::table('settings')->paginate();
         return view('admin.setting.setting',compact('setting'));
-    }
-    public function setting_insert(Request $request){
-        $setting_insert = DB::table('settings')->insert([
-            "company"                      => $request->company,
-            "address"                      => $request->address,
-            "address2"                     => $request->address2,
-            "city"                         => $request->city,
-            "state"                        => $request->state,
-            "zip"                          => $request->zip,
-            "country"                      => $request->country,
-            "tollfree"                     => $request->tollfree,
-            "telephone"                    => $request->telephone,
-            "fax"                          => $request->fax,
-            "email"                        => $request->email,
-            "slogan"                       => $request->slogan,
-            "show_contact"                 => $request->show_contact,
-            "show_map"                     => $request->show_map,
-            "map_engine"                   => $request->map_engine,
-            "home_page_title"              => $request->home_page_title,
-            "username"                     => $request->username,
-            "password"                     => $request->password,
-            "minimum_time"                 => $request->minimum_time,
-            "driver_minimum_transfers"     => $request->driver_minimum_transfers,
-        ]);
-        if($setting_insert){
-         return redirect('admin/setting');
-        }
     }
     public function settings_update(Request $request){
         $user_driver_list_update = DB::table('settings')->insert([

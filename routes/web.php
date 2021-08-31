@@ -54,6 +54,7 @@ Route::group(['prefix' => 'admin'], function () {
 
     // Reservation Route
     Route::get('/reservation_list',[App\Http\Controllers\AdminController::class, 'reservation_list'])->name('reservation_list');
+    Route::get('/reservation_list_add',[App\Http\Controllers\AdminController::class, 'reservation_list_add'])->name('reservation_list_add');
     
 
     // Reservation Status Route
@@ -206,7 +207,6 @@ Route::group(['prefix' => 'admin'], function () {
     
     // Admin User Driver Shedule Route
     Route::get('/setting',[App\Http\Controllers\AdminController::class, 'setting'])->name('setting');
-    Route::get('/setting_edit',[App\Http\Controllers\AdminController::class, 'setting_edit'])->name('setting_edit');
     Route::get('/setting_update',[App\Http\Controllers\AdminController::class, 'setting_update'])->name('setting_update');
 
 

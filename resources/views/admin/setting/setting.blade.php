@@ -50,16 +50,16 @@
                                                 <div class="card-body">
                                                         <!-----------start of form----------->
                                                                                   
-                                        <form action="{{ url('admim/settings_update') }}" method="POST">
+                                        <form action="{{ url('admim/setting_update') }}" method="POST">
                                             @csrf
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label class="font-weight-semibold" for="userName">Company Name:</label>
-                                                    <input type="text" class="form-control" id="userName" placeholder="" name="company" value="">
+                                                    <input type="text" class="form-control" id="userName" placeholder="" name="company" value="Sunstate Transportation">
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="font-weight-semibold" for="email">Street Address:</label>
-                                                    <input type="text" class="form-control" id="email" placeholder=" " name="address" value="">
+                                                    <input type="text" class="form-control" id="email" placeholder=" " name="address" value="7021 Grand National Park  Dr">
                                                 </div>
                                             </div>
                                             <div class="form-row">
@@ -275,8 +275,7 @@
                                                         </div><!----------------------formrow-->
                                                                 <div class="form-row float-right">
                                                                     <button class="btn btn-primary">Update</button>
-                                                                </div>
-                                                            
+                                                                </div>                                                            
                                                     </form>
                                                 </div>
                                               </div>
